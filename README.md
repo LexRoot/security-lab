@@ -14,9 +14,15 @@ Autor de todo el contenido de este repositorio: investigación, pruebas, captura
 
 | Carpeta | Contenido | Estado |
 |---|---|---|
-| [`writeups/`](writeups/) | Write-ups de laboratorios de Hack The Box y el script `nuevo_reto.sh` que genera su estructura. | En preparación: los primeros se publican tras revisar privacidad y normas de divulgación. |
+| [`writeups/`](writeups/) | Write-ups de Hack The Box y el script `nuevo_reto.sh` que genera su estructura. | 1 publicado |
 | [`notas/`](notas/) | Apuntes de estudio sobre redes y Linux. | Próximamente |
 | [`docs/`](docs/guia-laboratorio.md) | Cómo está montado mi laboratorio: Kali en una máquina virtual aislada, con instantáneas. | Disponible |
+
+## Write-ups publicados
+
+| Fecha | Informe | Tema |
+|---|---|---|
+| 2026-11-03 | [Checkout de HTB Academy (Recurly): IVA y NIF para consumidores de Canarias](writeups/htb/2026-11-03-htb-recurly-billing-bug/htb-recurly-billing-bug.md) | Fallo de lógica de negocio y validación fiscal, con evidencias y comunicación con el soporte. |
 
 ## Cómo trabajo
 
@@ -33,6 +39,7 @@ Solo documento laboratorios autorizados e investigaciones dentro de su marco leg
 
 - [x] Laboratorio Kali aislado y acceso por SSH configurado.
 - [x] Script para crear la estructura de cada write-up.
-- [ ] Publicar los primeros write-ups de Hack The Box.
+- [x] Primer informe publicado (checkout de HTB Academy).
+- [ ] Publicar los primeros write-ups de máquinas de Hack The Box.
 - [ ] Completar la ruta Pre Security de TryHackMe.
 - [ ] Escribir los apuntes de redes y Linux.
