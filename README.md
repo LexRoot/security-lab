@@ -1,39 +1,38 @@
 # Security Lab
 
-Laboratorio personal de ciberseguridad donde practico **ataque (Red Team) y defensa (Blue Team)** en un entorno aislado, usando plataformas y máquinas educativas y legales.
+**Guillermo González Callero** · [LexRoot en Hack The Box](https://profile.hackthebox.com/profile/01a1777c-1c79-7096-8ac5-04f72f35780a) · [LinkedIn](https://www.linkedin.com/in/guillermo-gonzalez-callero/)
 
-Documento cada ejercicio para mostrar cómo razono, no solo el resultado final.
+Portfolio de mi aprendizaje práctico en ciberseguridad: write-ups de laboratorios de **Hack The Box**, apuntes de estudio y la automatización que uso para documentarlo todo con el mismo formato.
 
-## Enfoque
+## Quién soy
 
-- **Entorno:** máquina virtual Kali Linux como equipo atacante, aislada del sistema principal y con instantáneas (snapshots) antes de cada ejercicio.
-- **Plataformas:** **Hack The Box** (usuario LexRoot) como plataforma principal; TryHackMe, VulnHub y Blue Team Labs Online como complemento.
+Graduado en Derecho, cursando un doble máster en Abogacía y Procura y en Derecho Digital (UNIR). Me muevo entre el derecho, la automatización y la IA, y aprendo ciberseguridad con un enfoque práctico, con interés en cumplimiento y privacidad (RGPD).
+
+Autor de todo el contenido de este repositorio: investigación, pruebas, capturas y redacción.
+
+## Qué encontrarás aquí
+
+| Carpeta | Contenido | Estado |
+|---|---|---|
+| [`writeups/`](writeups/) | Write-ups de laboratorios de Hack The Box y el script `nuevo_reto.sh` que genera su estructura. | En preparación: los primeros se publican tras revisar privacidad y normas de divulgación. |
+| [`notas/`](notas/) | Apuntes de estudio sobre redes y Linux. | Próximamente |
+| [`docs/`](docs/guia-laboratorio.md) | Cómo está montado mi laboratorio: Kali en una máquina virtual aislada, con instantáneas. | Disponible |
+
+## Cómo trabajo
+
+- **Entorno:** máquina virtual Kali Linux aislada del sistema principal y con instantáneas antes de cada ejercicio.
+- **Plataformas:** Hack The Box como plataforma principal; TryHackMe, VulnHub y Blue Team Labs Online como complemento.
 - **Método:** primero atacar (reconocimiento con Nmap, explotación, escalada de privilegios) y después analizar qué rastro habría delatado el ataque (logs y tráfico de red con Wireshark).
-
-## Estructura
-
-- **`writeups/`**: documentación de cada laboratorio. Incluye `nuevo_reto.sh`, que crea la carpeta, la subcarpeta de evidencias y la plantilla de un nuevo reto de Hack The Box (ver [`writeups/README.md`](writeups/README.md)).
-- **`notas/`**: apuntes de estudio (redes y Linux).
-- **`docs/`**: [guía de configuración del laboratorio](docs/guia-laboratorio.md).
-
-## Cómo documento cada ejercicio
-
-1. Objetivo
-2. Reconocimiento
-3. Explotación
-4. Qué no funcionó primero
-5. Resultado
-6. Análisis defensivo (Blue Team)
-7. Qué he aprendido
+- **Formato de cada write-up:** Enumeración → Explotación → Escalada de Privilegios → Remediación.
 
 ## Privacidad y ética
 
-Solo documento laboratorios autorizados e investigaciones dentro de su marco legal. Las capturas se publican redactadas, sin datos personales ni de terceros.
+Solo documento laboratorios autorizados e investigaciones dentro de su marco legal. Las capturas se publican redactadas, sin datos personales míos ni de terceros.
 
-## Estado
+## Próximos pasos
 
-En curso. Mi formación se apoya en Hack The Box y la complemento con la ruta Pre Security de TryHackMe. Iré publicando aquí los writeups y mis apuntes a medida que los termine.
-
-## Contacto
-
-[LinkedIn](https://www.linkedin.com/in/guillermo-gonzalez-callero/) | [Hack The Box](https://profile.hackthebox.com/profile/01a1777c-1c79-7096-8ac5-04f72f35780a)
+- [x] Laboratorio Kali aislado y acceso por SSH configurado.
+- [x] Script para crear la estructura de cada write-up.
+- [ ] Publicar los primeros write-ups de Hack The Box.
+- [ ] Completar la ruta Pre Security de TryHackMe.
+- [ ] Escribir los apuntes de redes y Linux.
