@@ -7,7 +7,7 @@
 
 ## Resumen
 
-Al contratar el plan *HTB Academy Student* (9,00 €) con una dirección de Canarias, el checkout trata el campo del identificador fiscal de forma contradictoria. Si lo dejo vacío, avanza y aplica el IVA español del 21 %. Si introduzco el DNI de un particular, lo rechaza como `Invalid` y no me deja continuar. El soporte confirmó que el validador solo acepta números de IVA intracomunitarios (VIES) y me recomendó elegir España como país en lugar de Canarias.
+Al contratar el plan *HTB Academy Student* (9,00 €) con una dirección de Canarias, el checkout trata el campo del identificador fiscal de forma contradictoria. Si lo dejo vacío, avanza y aplica el IVA español del 21 %. Si introduzco el DNI de un particular, lo rechaza como `Invalid` y no me deja continuar. El soporte confirmó que el validador solo acepta números de IVA intracomunitarios (VIES) y me recomendó elegir España como país en lugar de Canarias. El 4 de noviembre respondió que no soy elegible para la exención y ofreció devolverme el 14 % del impuesto como gesto único de buena voluntad.
 
 ## Contexto
 
@@ -52,7 +52,7 @@ En el reporte que envié al soporte describí además que, al detectar el códig
 
 ## Comunicación con el soporte
 
-Registro de la conversación con el soporte de Hack The Box el 3 de noviembre de 2026.
+Registro de la conversación con el soporte de Hack The Box los días 3 y 4 de noviembre de 2026.
 
 1. **Reporte inicial:** envié un resumen técnico con los pasos para reproducirlo y el comportamiento esperado.
 
@@ -67,6 +67,11 @@ Registro de la conversación con el soporte de Hack The Box el 3 de noviembre de
    ![Respuesta final del soporte (nombre del agente oculto)](evidencias/2026-11-03-htb-soporte-admision-error.png)
 
    Esa recomendación traslada el 21 % al usuario en lugar de corregir la validación, por lo que la considero una solución insatisfactoria para un consumidor canario.
+5. **Mi segunda réplica y la respuesta del 4 de noviembre:** respondí que cambiar el país a España para esquivar un fallo de validación no es una solución conforme, porque obliga a cobrar un 21 % de IVA español que, según mi lectura, no se aplica a residentes en Canarias. Volví a pedir que escalaran el ticket a un responsable de facturación para marcar mi perfil como exento o emitir un enlace de pago con IVA 0 %. El agente contestó: «You are not eligible for tax-exempt status. The best we can do for you is to refund 14% of the tax for you as a one-time only token of good will» (no eres elegible para la exención; lo máximo que podemos hacer es devolverte el 14 % del impuesto como gesto único de buena voluntad).
+
+   ![Respuesta del soporte del 4 de noviembre (nombre del agente oculto)](evidencias/2026-11-04-htb-soporte-respuesta-reembolso.png)
+
+   La respuesta no corrige la validación ni aclara por qué se aplica el IVA español a un consumidor canario: ofrece una devolución parcial puntual, que no resuelve el problema para los demás usuarios afectados.
 
 ## Recomendaciones
 
