@@ -1,15 +1,16 @@
 # Writeups
 
-Documentación técnica de mis laboratorios de **Hack The Box**: cada reto se documenta con la misma estructura (enumeración, explotación, escalada de privilegios y remediación) y con sus evidencias.
+Documentación técnica de mis laboratorios de ciberseguridad, principalmente de **Hack The Box**: cada reto se documenta con la misma estructura (enumeración, explotación, escalada de privilegios y remediación) y con sus evidencias.
 
 ## Contenido
 
 | Elemento | Descripción |
 |----------|-------------|
 | `nuevo_reto.sh` | Script que crea la estructura de un nuevo laboratorio. |
-| `htb/YYYY-MM-DD-htb-<nombre>/` | Un laboratorio de Hack The Box (lo genera el script). |
-| `htb/…/htb-<nombre>.md` | Write-up del laboratorio. |
-| `htb/…/evidencias/` | Capturas del laboratorio, ya revisadas y redactadas. |
+| `htb/`, `thm/`, `vulnhub/`, `btlo/` | Laboratorios por plataforma: Hack The Box, TryHackMe, VulnHub y Blue Team Labs Online. |
+| `<plataforma>/YYYY-MM-DD-<plataforma>-<nombre>/` | Un laboratorio (lo genera el script). |
+| `<plataforma>/…/<plataforma>-<nombre>.md` | Write-up del laboratorio. |
+| `<plataforma>/…/evidencias/` | Capturas del laboratorio, ya revisadas y redactadas. |
 
 ## `nuevo_reto.sh`
 
@@ -18,8 +19,9 @@ Crea en un solo paso la carpeta del laboratorio, las carpetas de evidencias y la
 **Requisitos:** macOS o Linux con Bash. Si hace falta, `chmod +x nuevo_reto.sh`.
 
 ```bash
-./nuevo_reto.sh "Nombre de la máquina"
-./nuevo_reto.sh            # sin argumento, pregunta el nombre
+./nuevo_reto.sh "Nombre de la máquina"                    # Hack The Box (por defecto)
+./nuevo_reto.sh --plataforma thm "Nombre de la sala"      # htb | thm | vulnhub | btlo
+./nuevo_reto.sh                                           # sin argumento, pregunta el nombre
 ```
 
 Ejemplo con espacios y tildes:
@@ -60,6 +62,7 @@ Cada sección incluye un comentario HTML con un ejemplo de captura que se activa
 |-----------|-----------|
 | Nombre vacío o solo espacios | Error y código de salida `1`. |
 | Nombre sin caracteres válidos (solo símbolos) | Error y código de salida `1`. |
+| Plataforma no reconocida | Error y código de salida `1`. |
 | La carpeta ya existe | Error y código de salida `1`; no se sobrescribe nada. |
 
 ## Convenciones
@@ -68,7 +71,7 @@ Cada sección incluye un comentario HTML con un ejemplo de captura que se activa
 - **Nombres de archivo:** minúsculas, sin tildes ni espacios, con prefijo de fecha `YYYY-MM-DD`.
 - **Evidencias:** cada captura se referencia con ruta relativa y texto alternativo descriptivo.
 - **Datos sensibles:** nunca se publican contraseñas, tokens, datos personales propios o de terceros, ni información que permita atacar sistemas en producción.
-- **Alcance:** solo laboratorios autorizados (Hack The Box) e investigaciones dentro de su marco legal y ético.
+- **Alcance:** solo laboratorios autorizados e investigaciones dentro de su marco legal y ético.
 
 ## Flujo de trabajo
 

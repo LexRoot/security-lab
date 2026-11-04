@@ -14,7 +14,7 @@ Autor de todo el contenido de este repositorio: investigación, pruebas, captura
 
 | Carpeta | Contenido | Estado |
 |---|---|---|
-| [`writeups/`](writeups/) | Write-ups de Hack The Box y el script `nuevo_reto.sh` que genera su estructura. | 1 publicado |
+| [`writeups/`](writeups/) | Write-ups de laboratorios (principalmente Hack The Box) y el script `nuevo_reto.sh` que genera su estructura. | 1 publicado |
 | [`notas/`](notas/) | Apuntes de estudio sobre redes y Linux. | Próximamente |
 | [`docs/`](docs/guia-laboratorio.md) | Cómo está montado mi laboratorio: Kali en una máquina virtual aislada, con instantáneas. | Disponible |
 
