@@ -1,6 +1,6 @@
 # Security Lab
 
-**Guillermo González Callero** · [LexRoot en Hack The Box](https://profile.hackthebox.com/profile/01a1777c-1c79-7096-8ac5-04f72f35780a) · [LinkedIn](https://www.linkedin.com/in/guillermo-gonzalez-callero/)
+**Guillermo Gonzalez Callero** · [LexRoot en Hack The Box](https://profile.hackthebox.com/profile/01a1777c-1c79-7096-8ac5-04f72f35780a) · [LinkedIn](https://www.linkedin.com/in/guillermo-gonzalez-callero/)
 
 Portfolio de mi aprendizaje práctico en ciberseguridad: write-ups de laboratorios de **Hack The Box**, apuntes de estudio y la automatización que uso para documentarlo todo con el mismo formato.
 
