@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
-# nuevo_reto.sh — Crea la carpeta de un laboratorio de Hack The Box con su
-# carpeta de evidencias y la plantilla Markdown del write-up.
+# nuevo_reto.sh — Crea la carpeta de un laboratorio de Hack The Box con sus
+# carpetas de evidencias y la plantilla Markdown del write-up.
 #
 # Uso:
 #   ./nuevo_reto.sh "Nombre de la máquina"
 #   ./nuevo_reto.sh            (te lo pregunta)
 #
-# Resultado (dentro de writeups/):
-#   YYYY-MM-DD-htb-<nombre>/
+# Resultado (dentro de htb/, junto a este script):
+#   htb/YYYY-MM-DD-htb-<nombre>/
 #   ├── htb-<nombre>.md        plantilla del write-up
-#   └── evidencias/            capturas y pruebas del reto
+#   ├── evidencias/            capturas ya redactadas (lo único que se publica)
+#   └── evidencias-originales/ capturas sin redactar (nunca se suben a Git)
 
 set -euo pipefail
 
@@ -41,8 +42,9 @@ if [ -z "$SLUG" ]; then
 fi
 
 FECHA="$(date +%Y-%m-%d)"
-LAB_DIR="$BASE_DIR/${FECHA}-htb-${SLUG}"
+LAB_DIR="$BASE_DIR/htb/${FECHA}-htb-${SLUG}"
 EVID_DIR="$LAB_DIR/evidencias"
+ORIG_DIR="$LAB_DIR/evidencias-originales"
 MD_FILE="$LAB_DIR/htb-${SLUG}.md"
 
 if [ -e "$LAB_DIR" ]; then
@@ -50,7 +52,7 @@ if [ -e "$LAB_DIR" ]; then
     exit 1
 fi
 
-mkdir -p "$EVID_DIR"
+mkdir -p "$EVID_DIR" "$ORIG_DIR"
 
 cat > "$MD_FILE" <<EOF
 # ${NOMBRE} — Hack The Box
@@ -87,6 +89,7 @@ Cómo corregir las vulnerabilidades encontradas (parches, configuración, buenas
 EOF
 
 echo "Laboratorio creado:"
-echo "  Carpeta:     $LAB_DIR"
-echo "  Write-up:    $MD_FILE"
-echo "  Evidencias:  $EVID_DIR"
+echo "  Carpeta:               $LAB_DIR"
+echo "  Write-up:              $MD_FILE"
+echo "  Evidencias (públicas): $EVID_DIR"
+echo "  Originales (privadas): $ORIG_DIR"
