@@ -27,7 +27,7 @@ Autor de todo el contenido de este repositorio: investigación, pruebas, captura
 ## Cómo trabajo
 
 - **Entorno:** máquina virtual Kali Linux aislada del sistema principal y con instantáneas antes de cada ejercicio.
-- **Plataformas:** Hack The Box como plataforma principal; TryHackMe, VulnHub y Blue Team Labs Online como complemento.
+- **Plataforma:** Hack The Box y su Academy.
 - **Método:** primero atacar (reconocimiento con Nmap, explotación, escalada de privilegios) y después analizar qué rastro habría delatado el ataque (logs y tráfico de red con Wireshark).
 - **Formato de cada write-up:** Enumeración → Explotación → Escalada de Privilegios → Remediación.
 
@@ -41,5 +41,5 @@ Solo documento laboratorios autorizados e investigaciones dentro de su marco leg
 - [x] Script para crear la estructura de cada write-up.
 - [x] Primer informe publicado (checkout de HTB Academy).
 - [ ] Publicar los primeros write-ups de máquinas de Hack The Box.
-- [ ] Completar la ruta Pre Security de TryHackMe.
+- [ ] Completar la ruta «Information Security Foundations» de HTB Academy.
 - [ ] Escribir los apuntes de redes y Linux.
